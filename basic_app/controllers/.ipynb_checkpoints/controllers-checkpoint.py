@@ -5,6 +5,20 @@ class BasicApp(http.Controller):
     @http.route('/basic_app/basic_app/', auth='public')
     def index(self, **kw):
         return "Hello, world"
+    
+    @http.route('/basic_app/hello', auth='user', type='json')
+    def hello(self):
+        return {
+                'html': """
+                    <div>
+                        <h1>hello, world</h1>
+                    </div> """
+                }
+
+    
+    
+    
+    
 
     @http.route('/basic_app/basic_app/objects/', auth='public')
     def list(self, **kw):
