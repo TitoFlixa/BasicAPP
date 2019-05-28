@@ -51,7 +51,7 @@
     <!-- actions opening try -->
     <record model="ir.actions.act_window" id="basic_app.action_window_try">
       <field name="name">BasicApp try</field>
-      <field name="view_id">basic_app.try</field>
+      <field name="view_id" ref="basic_app.try"/>
     </record>
       
       
