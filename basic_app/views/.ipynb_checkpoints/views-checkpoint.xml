@@ -6,6 +6,7 @@
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="basic_app.try">
       <field name="name">BasicApp try</field>
+      <field name="model">basic_app.basic_app</field>        
       <field name="arch" type="xml">
         <form>
             <h1> HEADDER</h1>
