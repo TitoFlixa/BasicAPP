@@ -4,14 +4,10 @@
     
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="basic_app.list">
-      <field name="name">BasicApp list</field>
+      <field name="name">BasicApp form</field>
       <field name="model">basic_app.basic_app</field>
       <field name="arch" type="xml">
-        <form>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </form>
+        <form banner_route="/basic_app/basic_app/" />
       </field>
     </record>
       
