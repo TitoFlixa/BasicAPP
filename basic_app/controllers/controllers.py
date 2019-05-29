@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 from odoo import http
 
+
 class BasicApp(http.Controller):
     @http.route('/basic_app/basic_app/', auth='public')
     def index(self, **kw):
         return "Hello, world"
+    
+    
     
     @http.route('/basic_app/hello', auth='user', type='json')
     def hello(self):
@@ -15,10 +18,14 @@ class BasicApp(http.Controller):
                     </div> """
                 }
 
-    
-    
-    
-    
+
+    @http.route('/basic_app/basic_app/objects1/', auth='user')
+    def list(self, **kw):
+        Obj = http.request.env['basic_app.basic_app']
+        objs = Obj.search([])
+        return http.request.render('basic_app.listing', { 'objs': objs})
+        
+      
 
     @http.route('/basic_app/basic_app/objects/', auth='public')
     def list(self, **kw):
