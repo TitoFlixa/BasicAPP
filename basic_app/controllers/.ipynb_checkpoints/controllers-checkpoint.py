@@ -19,7 +19,7 @@ class BasicApp(http.Controller):
                 }
 
 
-    @http.route('/basic_app/basic_app/objects1/', auth='user')
+    @http.route('/basic_app/basic_app/objects1/', auth='public')
     def list(self, **kw):
         Obj = http.request.env['basic_app.basic_app']
         objs = Obj.search([])
