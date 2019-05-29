@@ -16,15 +16,7 @@ class BasicApp(http.Controller):
                     <div>
                         <h1>hello, world</h1>
                     </div> """
-                }
-
-
-    @http.route('/basic_app/basic_app/objects1/', auth='public')
-    def list(self, **kw):
-        Obj = http.request.env['basic_app.basic_app']
-        objs = Obj.search([])
-        return http.request.render('basic_app.listing', { 'objs': objs})
-        
+                }        
       
 
     @http.route('/basic_app/basic_app/objects/', auth='public')

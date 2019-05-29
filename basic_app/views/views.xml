@@ -22,7 +22,7 @@
       <field name="name">BasicApp form</field>
       <field name="model">basic_app.basic_app</field>
       <field name="arch" type="xml">
-        <form banner_route="/basic_app/hello/" />
+        <form banner_route="/basic_app/basic_app/objects/" />
       </field>
     </record>
       
