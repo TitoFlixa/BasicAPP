@@ -33,22 +33,13 @@
       <field name="model">basic_app.basic_app</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
+            
+<!--
+            <field name="name"/>
           <field name="value"/>
           <field name="value2"/>
-                <control>
-      <create
-        string="Add a product"
-      />
-      <create
-        string="Add a section"
-        context="{'default_display_type': 'line_section'}"
-      />
-      <create
-        string="Add a note"
-        context="{'default_display_type': 'line_note'}"
-      />
-    </control>
+-->
+            <t t-call="listing"/>
 
         </tree>
       </field>
