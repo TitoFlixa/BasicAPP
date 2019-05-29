@@ -19,7 +19,7 @@ class BasicApp(http.Controller):
                 }        
       
 
-    @http.route('/basic_app/basic_app/objects/', auth='public', type='json')
+    @http.route('/basic_app/basic_app/objects/', auth='public', type='http')
     def list(self, **kw):
         return http.request.render('basic_app.listing', {
             'root': '/basic_app/basic_app',
