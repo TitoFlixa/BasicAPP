@@ -36,6 +36,20 @@
           <field name="name"/>
           <field name="value"/>
           <field name="value2"/>
+                <control>
+      <create
+        string="Add a product"
+      />
+      <create
+        string="Add a section"
+        context="{'default_display_type': 'line_section'}"
+      />
+      <create
+        string="Add a note"
+        context="{'default_display_type': 'line_note'}"
+      />
+    </control>
+
         </tree>
       </field>
     </record>
